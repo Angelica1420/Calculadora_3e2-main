@@ -1,0 +1,16 @@
+Calculadora 3e2 con lógica en hook personalizado.
+
+ESTRUCTURA ORIGINAL CONSERVADA:
+ src/app/index.tsx
+ src/app/components/Display.tsx
+ src/app/components/botones/Boton.tsx
+ src/app/components/botones/Rejilla.tsx
+
+NUEVO:
+ src/hooks/useCalculadora.ts -> aquí están estados, operaciones y funciones.
+
+Para ejecutar:
+ npm install
+ npx expo start -c
+
+Nota: los botones siguen en Rejilla.tsx y sus estilos siguen en Boton.tsx.

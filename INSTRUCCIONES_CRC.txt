@@ -1,0 +1,20 @@
+CRC - Calculadora con Custom Hooks
+
+Estructura original conservada: src/app/components/Display.tsx, botones/Boton.tsx, botones/Rejilla.tsx y src/app/index.tsx.
+Nueva carpeta: src/app/hooks/
+  useCounter.ts (contador independiente)
+  useCalculator.ts (estados y operaciones)
+
+Demostración de tres contadores independientes (usar dentro de cualquier componente React):
+const uno = useCounter(0);
+const dos = useCounter(2);
+const tres = useCounter(4);
+
+Teclas: AC limpia la operación; mantener AC presionado borra el último dígito; % convierte a porcentaje; √ calcula raíz cuadrada; Borrar historial limpia la lista.
+El historial se conserva durante la sesión de la aplicación, no en almacenamiento permanente.
+La cifra gris anticipa el resultado antes de pulsar =.
+
+Para ejecutar: npm install ; npx expo start -c
+Para verificar tipos: npx tsc --noEmit
+
+NOTA: El ZIP se basó en la versión previa con Expo SDK 58 y la carpeta botones sin espacio final; no se movieron componentes.

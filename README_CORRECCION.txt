@@ -1,0 +1,1 @@
+Proyecto basado en el ZIP original. Se conservan src/app/components/botones, Boton.tsx, Rejilla.tsx, Display.tsx e index.tsx. Se elimina solo el espacio invisible al final del nombre de carpeta botones. Instala con npm install y npx expo start -c. No contiene node_modules ni lock files; npm generará package-lock.json.
